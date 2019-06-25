@@ -1,5 +1,5 @@
 import _ from 'lodash'
-import { API_SERVER, MARS_ENDPOINT } from '#config/constants'
+import { API_SERVER, MARS_ENDPOINT, API_KEY } from '#config/constants'
 
 const HEADERS = {
   JSON: { 'Content-Type': 'application/json' },
@@ -51,9 +51,9 @@ export const fetchURL = async ({
 }
 
 export const getURL = {
-  // Weird usage of api_key, of course it should placed in headers
-  mars_pictures: ({ api_key }) => ({
-    url: `${API_SERVER}/${MARS_ENDPOINT}/?sol=1000&page=2&api_key=${api_key}`,
+  // Weird usage of api_key in my opinion, of course it should be placed in headers
+  mars_pictures: ({ page }) => ({
+    url: `${API_SERVER}/${MARS_ENDPOINT}/?sol=1000&page=${page}&api_key=${API_KEY}`,
     options: async () => ({
       method: 'GET',
       headers: {
