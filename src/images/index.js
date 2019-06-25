@@ -1,8 +1,12 @@
 const commonAssets = [
-  // {
-  //   path: require('./a.png'),
-  //   name: 'a'
-  // }
+  {
+    path: require('./heart_gray.png'),
+    name: 'heart_gray'
+  },
+  {
+    path: require('./heart_roman.png'),
+    name: 'heart_roman'
+  }
 ]
 
 export const getImage = imageName => {
