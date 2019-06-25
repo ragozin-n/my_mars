@@ -7,7 +7,8 @@
     "test": "jest",
     "lint": "yarn eslint . --fix --ext .js src",
     "dev": "react-native start",
-    "clean:yarn": "rm -rf node_modules/ && yarn"
+    "clean:yarn": "rm -rf node_modules/ && yarn",
+    "ios": "react-native run-ios --simulator=\"iPhoneX\""
   },
   "precommit": [
     "lint"
@@ -25,6 +26,8 @@
     "@react-native-community/async-storage": "^1.5.0",
     "react": "16.8.3",
     "react-native": "0.59.9",
+    "react-native-gesture-handler": "^1.3.0",
+    "react-native-sensitive-info": "^5.4.1",
     "react-navigation": "^3.11.0",
     "react-redux": "^7.1.0",
     "redux": "^4.0.1",
