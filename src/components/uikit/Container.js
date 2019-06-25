@@ -1,13 +1,18 @@
 import React, { memo } from 'react'
-import { View } from 'react-native'
+import { View, StyleSheet } from 'react-native'
 import PropTypes from 'prop-types'
 
 const Container = memo(({ children = null }) => {
-  return <View>{children}</View>
+  const { container } = styles
+  return <View style={container}>{children}</View>
 })
 
 Container.propTypes = {
   children: PropTypes.node
 }
+
+const styles = StyleSheet.create({
+  container: { flex: 1, flexDirection: 'column' }
+})
 
 export { Container }

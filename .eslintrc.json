@@ -16,7 +16,8 @@
         ["#actions", "./src/store/actions"],
         ["#reducers", "./src/store/reducers"],
         ["#styles", "./src/styles"],
-        ["#tests", "./tests"]
+        ["#tests", "./tests"],
+        ["#prop-types", "./src/prop-types"]
       ]
     }
   },

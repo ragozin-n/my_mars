@@ -6,6 +6,18 @@ const commonAssets = [
   {
     path: require('./heart_roman.png'),
     name: 'heart_roman'
+  },
+  {
+    path: require('./heart_roman_clicked.png'),
+    name: 'heart_roman_clicked'
+  },
+  {
+    path: require('./dislike.png'),
+    name: 'dislike'
+  },
+  {
+    path: require('./like.png'),
+    name: 'like'
   }
 ]
 

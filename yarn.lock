@@ -3687,7 +3687,7 @@ inquirer@^6.2.2:
     strip-ansi "^5.1.0"
     through "^2.3.6"
 
-invariant@^2.2.2, invariant@^2.2.4:
+invariant@^2.2.2, invariant@^2.2.4, invariant@^2.2.x:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"
   integrity sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA==
@@ -5237,6 +5237,11 @@ mkdirp@^0.5.0, mkdirp@^0.5.1:
   dependencies:
     minimist "0.0.8"
 
+moment@^2.24.0:
+  version "2.24.0"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.24.0.tgz#0d055d53f5052aa653c9f6eb68bb5d12bf5c2b5b"
+  integrity sha512-bV7f+6l2QigeBBZSM/6yTNq4P2fNpSWj/0e7jQcy87A8e7o2nAfP/34/2ky5Vw4B9S446EtIhodAzkFCcR4dQg==
+
 morgan@^1.9.0:
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/morgan/-/morgan-1.9.1.tgz#0a8d16734a1d9afbc824b99df87e738e58e2da59"
@@ -6133,6 +6138,13 @@ react-native-sensitive-info@^5.4.1:
   version "5.4.1"
   resolved "https://registry.yarnpkg.com/react-native-sensitive-info/-/react-native-sensitive-info-5.4.1.tgz#9cec225b7838f793d2d24709e4c2d0aad74dc0a7"
   integrity sha512-T0eJVAb8cBZOiYHq5TagaUsuETFJlCxjcLUpkciIUlYqeU55L4XTkdy6BgfOmVAowEMv5z3i3cmvJuTRUVrqZw==
+
+react-native-shake@^3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/react-native-shake/-/react-native-shake-3.3.1.tgz#e168827015db0cfb316f2bd428afe95f225fda6a"
+  integrity sha512-Z5W/tC3rsOcQmAOxe/uHsGNrXyZx3xwd1bFaRw0pbO0lhG4Z1g2MOcrO/Pa+ZA59ap/1tmwVP6/+IPtt6DPT1w==
+  dependencies:
+    invariant "^2.2.x"
 
 react-native-tab-view@^1.2.0, react-native-tab-view@^1.4.1:
   version "1.4.1"

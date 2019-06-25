@@ -14,7 +14,8 @@ const storage = createSensitiveStorage({
 const config = {
   key: 'root',
   storage,
-  timeout: null
+  timeout: null,
+  blacklist: ['main', 'favourites']
 }
 
 const reducers = persistCombineReducers(config, rootReducer)
