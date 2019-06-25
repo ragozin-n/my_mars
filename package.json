@@ -4,19 +4,57 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "lint": "yarn eslint . --fix --ext .js src",
+    "dev": "react-native start",
+    "clean:yarn": "rm -rf node_modules/ && yarn"
+  },
+  "precommit": [
+    "lint"
+  ],
+  "prettier": {
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "none",
+    "bracketSpacing": true,
+    "semi": false,
+    "useTabs": false,
+    "jsxBracketSameLine": false
   },
   "dependencies": {
+    "@react-native-community/async-storage": "^1.5.0",
     "react": "16.8.3",
-    "react-native": "0.59.9"
+    "react-native": "0.59.9",
+    "react-navigation": "^3.11.0",
+    "react-redux": "^7.1.0",
+    "redux": "^4.0.1",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-persist": "^5.10.0",
+    "redux-persist-sensitive-storage": "^1.0.0",
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/runtime": "^7.4.5",
+    "babel-eslint": "latest",
     "babel-jest": "^24.8.0",
+    "babel-preset-react-native": "^4.0.1",
+    "eslint": "latest",
+    "eslint-config-airbnb": "latest",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-babel": "latest",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsx-a11y": "latest",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "latest",
     "jest": "^24.8.0",
     "metro-react-native-babel-preset": "^0.54.1",
-    "react-test-renderer": "16.8.3"
+    "prettier": "^1.16.4",
+    "prettier-eslint": "^8.8.2",
+    "react-test-renderer": "16.8.3",
+    "reactotron-react-native": "^3.6.4",
+    "reactotron-redux": "^3.1.1"
   },
   "jest": {
     "preset": "react-native"
