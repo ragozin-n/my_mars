@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "#components": ["./src/components"],
+      "#config/api": ["./src/config/api"],
+      "#config/constants": ["./src/config/constants"],
+      "#config/enums": ["./src/config/enums"],
+      "#config/routes": ["./src/config/routes"],
+      "#images": ["./src/images"],
+      "#prop-types": ["./src/prop-types"],
+      "#screens": ["./src/screens"],
+      "#store": ["./src/store"],
+      "#actions": ["./src/store/actions"],
+      "#actions/types": ["./src/store/actions/types"],
+      "#reducers": ["./src/store/reducers"],
+      "#styles": ["./src/styles"],
+      "#styles/colors": ["./src/styles/colors"]
+    },
+    "baseUrl": "."
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "env": {
+    "node": true,
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": [
+        ["#components", "./src/components"],
+        ["#config", "./src/config"],
+        ["#images", "./src/images"],
+        ["#screens", "./src/screens"],
+        ["#store", "./src/store"],
+        ["#actions", "./src/store/actions"],
+        ["#reducers", "./src/store/reducers"],
+        ["#styles", "./src/styles"],
+        ["#tests", "./tests"]
+      ]
+    }
+  },
+  "parser": "babel-eslint",
+  "extends": ["airbnb", "prettier", "prettier/react"],
+  "plugins": ["prettier"],
+  "rules": {
+    "import/no-extraneous-dependencies": [0],
+    "import/no-cycle": [0],
+    "no-unused-expressions": [
+      "error",
+      {
+        "allowShortCircuit": true
+      }
+    ],
+    "prefer-destructuring": [
+      "error",
+      {
+        "object": true,
+        "array": false
+      }
+    ],
+    "prettier/prettier": "error",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "quote-props": 0,
+    "arrow-parens": 0,
+    "camelcase": 0,
+    "no-nested-ternary": 0,
+    "no-use-before-define": 0,
+    "max-len": [
+      "warn",
+      {
+        "code": 120,
+        "tabWidth": 4,
+        "comments": 120,
+        "ignoreUrls": true,
+        "ignoreRegExpLiterals": true,
+        "ignoreTemplateLiterals": true
+      }
+    ],
+    "no-return-assign": 0,
+    "import/prefer-default-export": 0,
+    "no-console": "error",
+    "semi": ["error", "never"],
+    "comma-dangle": ["error", "never"],
+    "no-underscore-dangle": 0,
+    "react/destructuring-assignment": 0,
+    "global-require": 0,
+    "react/require-default-props": 0
+  },
+  "globals": {
+    "__DEV__": true
+  }
+}
